@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Manuel Diamond Listowell is a new and rising Full-Stack React developer with 5 years of experience",
 
     images: [{
-      url: "https://i.ibb.co/PxFb4S8/image-2024-06-19-020449669.png",
+      url: "https://i.ibb.co/37rqpKc/image.png",
       
       alt: "ManuelZ"
     }]
