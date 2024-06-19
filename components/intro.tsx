@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image'
 import { motion} from 'framer-motion'; 
 import Link from 'next/link'
+
 import { BsArrowRight, BsGithub, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { useSectionInView } from '@/lib/hooks';
@@ -54,14 +55,14 @@ const Intro = () => {
 		        	animate={{opacity:1,y:0}} 
 
 		        >
-		        	<span className='font-bold'>Hello, I'm Kenjaku. </span>
+		        	<span className='font-bold'>Hello, I'm Manuel D. </span>
 		        	I'm a 
 		        	<span className='font-bold'> full-stack developer. </span><br/>
 		        	with
-		        	<span className='font-bold'> 800 years </span> 
+		        	<span className='font-bold'> 5+ years </span> 
 		        	of expeirence. I enjoy building <br/>
 		        	<span className='italic'> sites & web-apps </span> with
-		        	<span className='underline'> React(Next.js). </span>
+		        	<span className='underline'> Next.js(React) </span>
 		        </motion.h1>
        	  </div>
 	        <motion.div 
@@ -91,6 +92,11 @@ const Intro = () => {
 	        		href="https://www.github.com/manueldiamond/" target='_blank'>
 	        		  <BsGithub/> 
 	        	</a>
+				<a 
+	        		className='bg-white rounded-full p-4 text-gray-700 flex-center gap-2 text-[1.5rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:bg-gray-50 active:scale-95 transition border border-black/[.1] hover:text-gray-950'
+	        		href="https://www.upwork.com/freelancers/~011e58865534aa91df" target='_blank'>
+	        		  <Image className='flex flex-1' src='/upwork_icon.webp' width={24} height={24} alt='upwork icon'></Image> 
+	        	</a>j
 	        </motion.div>
 
        </section>

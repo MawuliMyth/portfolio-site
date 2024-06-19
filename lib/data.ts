@@ -74,6 +74,7 @@ export const projectsData = [
       "Simple recreation of the vite landing page in react",
     tags: ["React","Tailwind"],
     imageUrl: vite,
+    link:'https://www.upwork.com/freelancers/~011e58865534aa91df?p=1766530411098591232'
   },
   {
     title: "linked-out",
@@ -81,6 +82,21 @@ export const projectsData = [
       "Primitive Linked-in clone with basic feed functiontionality implemented with Firebase",
     tags: ["React", "Redux", "Firebase",],
     imageUrl: linkedOut,
+    link:'https://www.upwork.com/freelancers/~011e58865534aa91df?p=1790176955180494848'
+  },
+  {
+    link:'https://www.upwork.com/freelancers/~011e58865534aa91df?p=1803231128743804928',
+    title: "Link Flow",
+    description: "A clone of Linktree that allows users to create a personalized page with links to their various social profiles and websites. Implemented with Svelte and Firebase.",
+    tags: ["Svelte", "Firebase",'TailwindCSS'],
+    imageUrl: "https://i.ibb.co/tDT9qrt/img.png", // Replace with the actual path to your project image
+  },
+  {
+    link:'https://www.upwork.com/freelancers/~011e58865534aa91df?p=1803246647238889472',
+    title: "Tasty Chef",
+    description: "Order food around Central Campus online and have it delivered right to your doorstep!",
+    tags: ["Next.js", "SQL", "TailwindCSS"],
+    imageUrl: "https://i.ibb.co/1Z7pKSx/image-2024-06-19-020449669.png",
   },
 ] as const;
 
@@ -96,11 +112,9 @@ export const skillsData = [
   "Tailwind",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
+  "SQL",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
+  'Firebase',
+  'Svelte/SvelteKit'
 ] as const;

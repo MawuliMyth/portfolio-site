@@ -8,11 +8,29 @@ import ThemeSwitch from "@/components/ThemeSwitch";
 
 const inter = Inter({ subsets: ["latin"] });
 
+
+
 export const metadata: Metadata = {
   title: "Manuel Diamond | Full-Stack React Dev",
-  description: "Manuel Diamond Listowell is a new and rising Full-Stack React developer with 2 years of experience",
+  description: "Manuel Diamond Listowell is a new and rising Full-Stack React developer with 5 years of experience",
+
+  authors: [{ name: "Manuel D.", url: "https://github.com/manueldiamond/" }],
+  openGraph: {
+    type: "website",
+    url: "https://manuels-portfolio-site.vercel.app",
+    title: "Manuel Diamond | Full-Stack React Dev",
+    description: "Manuel Diamond Listowell is a new and rising Full-Stack React developer with 5 years of experience",
+
+    images: [{
+      url: "https://i.ibb.co/PxFb4S8/image-2024-06-19-020449669.png",
+      
+      alt: "ManuelZ"
+    }]
+  },
 };
- 
+
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
