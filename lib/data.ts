@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import vite from "@/public/vite.png";
 import linkedOut from "@/public/linked-out.png"; 
+import { StaticImageData } from "next/image";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const info={
@@ -89,14 +90,23 @@ export const projectsData = [
     title: "Link Flow",
     description: "A clone of Linktree that allows users to create a personalized page with links to their various social profiles and websites. Implemented with Svelte and Firebase.",
     tags: ["Svelte", "Firebase",'TailwindCSS'],
-    imageUrl: "https://i.ibb.co/tDT9qrt/img.png", // Replace with the actual path to your project image
+    imageUrl: {
+      src:"https://i.ibb.co/tDT9qrt/img.png",
+      height:320,
+      width:320,
+    } satisfies StaticImageData ,
+    // Replace with the actual path to your project image
   },
   {
     link:'https://www.upwork.com/freelancers/~011e58865534aa91df?p=1803246647238889472',
     title: "Tasty Chef",
     description: "Order food around Central Campus online and have it delivered right to your doorstep!",
     tags: ["Next.js", "SQL", "TailwindCSS"],
-    imageUrl: "https://i.ibb.co/1Z7pKSx/image-2024-06-19-020449669.png",
+    imageUrl:{
+      src: "https://i.ibb.co/1Z7pKSx/image-2024-06-19-020449669.png",
+      height:320,
+      width:320,
+    } satisfies StaticImageData ,
   },
 ] as const;
 

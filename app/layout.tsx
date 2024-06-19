@@ -23,13 +23,12 @@ export const metadata: Metadata = {
 
     images: [{
       url: "https://i.ibb.co/37rqpKc/image.png",
-      
+      width:320,
+      height:320,
       alt: "ManuelZ"
     }]
   },
 };
-
-
 
 export default function RootLayout({
   children,

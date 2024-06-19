@@ -93,10 +93,10 @@ const Intro = () => {
 	        		  <BsGithub/> 
 	        	</a>
 				<a 
-	        		className='bg-white rounded-full p-4 text-gray-700 flex-center gap-2 text-[1.5rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:bg-gray-50 active:scale-95 transition border border-black/[.1] hover:text-gray-950'
+	        		className='bg-white rounded-full h-[58px] p-4 text-gray-700 flex-center gap-2 text-[1.5rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:bg-gray-50 active:scale-95 transition border border-black/[.1] hover:text-gray-950'
 	        		href="https://www.upwork.com/freelancers/~011e58865534aa91df" target='_blank'>
-	        		  <Image className='flex flex-1' src='/upwork_icon.webp' width={24} height={24} alt='upwork icon'></Image> 
-	        	</a>j
+	        		  <Image className='flex flex-1 h-full aspect-square object-contain' src='/upwork_icon.webp' width={24} height={24} alt='upwork icon'></Image> 
+	        	</a>
 	        </motion.div>
 
        </section>
