@@ -5,7 +5,7 @@ import "./globals.css";
 import ActiveSectionContextProvider from "@/context/ActiveSectionContext";
 import { Toaster } from "react-hot-toast";
 import ThemeSwitch from "@/components/ThemeSwitch";
-
+import Head from 'next/head'
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -37,6 +37,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
+     <Head>
+      <meta name="google-site-verification" content="fa_FrVa23h0fxDQ02QTKsGhuSGKyh9wcbg6pnIgdlC8" />
+     </Head>
       <body className={`${inter.className} pt-28 sm:pt-36 bg-gray-50 text-gray-950 height-[5000px]`}>
         <div className="pink-blur -z-10 bg-[#fbe2e3] absolute top-[-6rem] right-[11.25rem] w-[31.25rem] h-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div>
         <div className="blue-blur -z-10 bg-[#dbd7fb] absolute top-[-1rem]  left-[-35.25rem] w-[50.25rem] h-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:[-5rem]"></div>
