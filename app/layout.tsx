@@ -13,7 +13,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Manuel Diamond | Full-Stack React Dev",
   description: "Manuel Diamond Listowell is a new and rising Full-Stack React developer with 5 years of experience",
-
+  other:[
+   {"google-site-verification":"fa_FrVa23h0fxDQ02QTKsGhuSGKyh9wcbg6pnIgdlC8",}
+  ],
   authors: [{ name: "Manuel D.", url: "https://github.com/manueldiamond/" }],
   openGraph: {
     type: "website",
