@@ -26,7 +26,7 @@ const Intro = () => {
 					>
 						<Image
 							className='rounded-full h-24 w-24 object-cover shadow-xl  border-white border-[0.35rem]'
-							src={' https://i.ibb.co/k18VSYj/b6a2d378-aa28-4290-be1d-ff2b7feb0e8a.jpg'}
+							src={'https://i.ibb.co/k18VSYj/b6a2d378-aa28-4290-be1d-ff2b7feb0e8a.jpg'}
 
 							alt="MDL"
 							width={192}
