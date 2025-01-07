@@ -8,6 +8,7 @@ import { BsArrowRight, BsGithub, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSection } from '@/context/ActiveSectionContext';
+import { info } from '@/lib/data';
 
 
 
@@ -25,9 +26,8 @@ const Intro = () => {
 						transition={{ type: 'tween', duration: 0.2 }}
 					>
 						<Image
-							className='rounded-full h-24 w-24 object-cover shadow-xl  border-white border-[0.35rem]'
-							src={'https://i.ibb.co/k18VSYj/b6a2d378-aa28-4290-be1d-ff2b7feb0e8a.jpg'}
-
+							className='rounded-full size-56 max-sm:size-36  aspect-square object-cover shadow-xl  border-white border-[0.35rem]'
+							src={info.photo}
 							alt="MDL"
 							width={192}
 							height={192}
@@ -78,26 +78,26 @@ const Intro = () => {
 				>
 					Contact me here <BsArrowRight className='opacity-70 group-hover:translate-x-1 group-hover:scale-110 transition' />
 				</Link>
-				<a
+				<Link
 					className=' group bg-white rounded-full py-3 px-7 flex-center gap-2 outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-95 transition border border-black/[.1]'
 					href="/CV.pdf" download >
 					Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 group-hover:scale-110 transition' />
-				</a>
-				<a
+				</Link>
+				<Link
 					className='bg-white rounded-full p-4 text-gray-700 flex-center gap-2 text-[1.5rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:bg-gray-50 active:scale-95 transition border border-black/[.1] hover:text-gray-950'
 					href="https://www.linkedin.com/in/manuel-ashong-416a0a237/" target='_blank'>
 					<BsLinkedin />
-				</a>
-				<a
+				</Link>
+				<Link
 					className='bg-white rounded-full p-4 text-gray-700 flex-center gap-2 text-[1.5rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:bg-gray-50 active:scale-95 transition border border-black/[.1] hover:text-gray-950'
 					href="https://www.github.com/manueldiamond/" target='_blank'>
 					<BsGithub />
-				</a>
-				<a
+				</Link>
+				<Link
 					className='bg-white rounded-full h-[58px] p-4 text-gray-700 flex-center gap-2 text-[1.5rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:bg-gray-50 active:scale-95 transition border border-black/[.1] hover:text-gray-950'
 					href="https://www.upwork.com/freelancers/~011e58865534aa91df" target='_blank'>
 					<Image className='flex flex-1 h-full aspect-square object-contain' src='/upwork_icon.webp' width={24} height={24} alt='upwork icon'></Image>
-				</a>
+				</Link>
 			</motion.div>
 
 		</section>

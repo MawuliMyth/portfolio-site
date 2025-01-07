@@ -12,16 +12,13 @@ export const info = {
   midname: 'Diamond',
   lastname: 'Listowell-Ashong',
   email: 'manueldiamondlistowell@gmail.com',
+  photo: 'https://i.ibb.co/Fn6Th8P/image.png',
 }
 
 export const links = [
   {
     name: "Home",
     hash: "#home",
-  },
-  {
-    name: "About",
-    hash: "#about",
   },
   {
     name: "Projects",
@@ -34,6 +31,10 @@ export const links = [
   {
     name: "Experience",
     hash: "#experience",
+  },
+  {
+    name: "About",
+    hash: "#about",
   },
   {
     name: "Contact",
@@ -86,6 +87,7 @@ export const projectsData = [
       "Simple recreation of the vite landing page in react",
     tags: ["React", "Tailwind"],
     imageUrl: vite,
+    imageUrls: [vite, linkedOut, vite],
     link: 'https://www.upwork.com/freelancers/~011e58865534aa91df?p=1766530411098591232'
   },
   {

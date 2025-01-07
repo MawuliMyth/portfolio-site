@@ -13,7 +13,7 @@ const faedInAnimVariants: Variants = {
 const Skills = () => {
     const ref = useSectionInView('Skills')
     return (
-        <section ref={ref} className='mt-36 container' id='skills'>
+        <section ref={ref} className=' scroll-mt-28 mt-36 container' id='skills'>
             <SectionHeading>
                 My Skills
             </SectionHeading>
