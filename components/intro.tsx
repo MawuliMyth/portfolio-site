@@ -54,14 +54,13 @@ const Intro = () => {
 				<motion.h1 className='text-center m-5 text-2xl font-medium !leading-[1.5]'
 					initial={{ opacity: 0, y: 100 }}
 					animate={{ opacity: 1, y: 0 }}
-
 				>
 					<span className='font-bold'>Hello, I'm {info.displayName}. </span>
 					I'm a
 					<span className='font-bold'> {info.title}. </span><br />
 					with
 					<span className='font-bold'> {info.yearsExperience}+ years </span>
-					of expeirence. I enjoy building <br />
+					of experience. I enjoy building <br />
 					<span className='italic'> {info.enjoyBuilding} </span> with
 					<span className='underline'> {info.libOrFramework} </span>
 				</motion.h1>
