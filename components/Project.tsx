@@ -139,7 +139,7 @@ const Project = ({ title, tags, description, imageUrl, link }: ProjectProps) => 
 					/>}
 					*/}
 					<Image
-						className='absolute object-cover top-8 right-0 max-w-[50%] w-full shadow-2xl rounded-t-xl group-even:right-[initial]
+						className='absolute object-cover top-8 right-0 max-w-[50%] h-full w-full shadow-2xl rounded-t-xl group-even:right-[initial]
 							group-hover:-rotate-3
 							group-even:sm:left-0
 							group-even:left-0

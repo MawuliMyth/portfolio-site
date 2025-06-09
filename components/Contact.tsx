@@ -21,8 +21,8 @@ const FormInputs = () => {
 	const toast = useToaster()
 	return (
 		<>
-			<input required maxLength={500} type="email" className={`${inputStyle} ${pending && "animate-pulse"}`} name="email" placeholder='Your email' id="" disabled={pending} />
-			<textarea required name="message" placeholder='Your message' id='message' className={`${inputStyle} ${pending && "animate-pulse"} h-[12rem]`} disabled={pending}></textarea>
+			<input required maxLength={500} type="email" className={`text-black ${inputStyle} ${pending && "animate-pulse"}`} name="email" placeholder='Your email' id="" disabled={pending} />
+			<textarea required name="message" placeholder='Your message' id='message' className={`text-black ${inputStyle} ${pending && "animate-pulse"} h-[12rem]`} disabled={pending}></textarea>
 			<button
 				type='submit'
 				className=' self-end btn-pri rounded-full py-3 px-7 flex-center gap-2 outline-none focus:scale-110 hover:scale-110 active:scale-95 transition group overflow-clip disabled:bg-opacity-70'
