@@ -109,18 +109,18 @@ const Project = ({ title, tags, description, imageUrl, link }: ProjectProps) => 
 		>
 			<Link href={link}>
 				<article
-					className='bg-gray-100 hover:bg-gray-200 w-full group rounded-xl border border-black/5 overflow-hidden sm:pr-8 relative min-h-[15rem] sm:min-h-[20rem] p-10 flex group group-even:justify-end transition duration-100 group-even:bg-white/80'>
+					className='hover:bg-transparent  bg-white/10 w-full group rounded-xl border border-white/10 overflow-hidden sm:pr-8 relative min-h-[40rem] p-10 flex group group-even:justify-end transition duration-100 group-even:bg-white/5 group-even:hover:bg-transparent'>
 
 					<div className=' group-even:text-end top-8 max-w-[52%] sm:max-w-[50%] flex flex-col'>
 						<h3 className='text-xl sm:text-2xl  font-semibold'>{title}</h3>
-						<motion.div className='overflow-hidden max-h-full'>
-							<p className=' text-sm sm:text-lg flex-1 mt-2 leading-relaxed text-gray-700'>
+						<motion.div className=' overflow-hidden max-h-full'>
+							<p className=' text-sm sm:text-lg flex-1 mt-2 leading-relaxed text-white/65 '>
 								{description}
 							</p>
 						</motion.div>
 						<ul className='flex group-even:justify-end flex-wrap mt-4 gap-2 sm:mt-auto'>
 							{tags.map(tag => (
-								<li className=' text-xs sm:text-lg text-white rounded-full bg-gray-700 px-2 py-1 sm:px-3 sm:py-2' key={tag}>{tag}</li>))}
+								<li className='capitalize text-xs sm:text-lg text-white rounded-full bg-red-900/30 px-2 py-1 sm:px-3 sm:py-2' key={tag}>{tag}</li>))}
 						</ul>
 					</div>
 					{/*
@@ -139,10 +139,10 @@ const Project = ({ title, tags, description, imageUrl, link }: ProjectProps) => 
 					/>}
 					*/}
 					<Image
-						className='absolute object-cover top-8 -right-60  sm:-right-40 w-[28.25rem] shadow-2xl rounded-t-xl group-even:right-[initial]
+						className='absolute object-cover top-8 right-0 max-w-[50%] w-full shadow-2xl rounded-t-xl group-even:right-[initial]
 							group-hover:-rotate-3
-							group-even:sm:-left-40
-							group-even:-left-60
+							group-even:sm:left-0
+							group-even:left-0
 							group-hover:-translate-x-5 
 							group-hover:scale-105
 							group-even:group-hover:rotate-3
@@ -151,6 +151,8 @@ const Project = ({ title, tags, description, imageUrl, link }: ProjectProps) => 
 						quality={95}
 						alt='My Project'
 						src={imageUrl}
+						width={1000}
+						height={1000}
 					/>
 				</article>
 			</Link>

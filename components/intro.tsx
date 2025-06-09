@@ -28,7 +28,7 @@ const Intro = () => {
 						<Image
 							className='rounded-full size-56 max-sm:size-36  aspect-square object-cover shadow-xl  border-white border-[0.35rem]'
 							src={info.photo}
-							alt="MDL"
+							alt={info.displayName}
 							width={192}
 							height={192}
 							quality={95}
@@ -56,14 +56,14 @@ const Intro = () => {
 					animate={{ opacity: 1, y: 0 }}
 
 				>
-					<span className='font-bold'>Hello, I'm Manuel D. </span>
+					<span className='font-bold'>Hello, I'm {info.displayName}. </span>
 					I'm a
-					<span className='font-bold'> full-stack developer. </span><br />
+					<span className='font-bold'> {info.title}. </span><br />
 					with
-					<span className='font-bold'> 5+ years </span>
+					<span className='font-bold'> {info.yearsExperience}+ years </span>
 					of expeirence. I enjoy building <br />
-					<span className='italic'> sites & web-apps </span> with
-					<span className='underline'> Next.js(React) </span>
+					<span className='italic'> {info.enjoyBuilding} </span> with
+					<span className='underline'> {info.libOrFramework} </span>
 				</motion.h1>
 			</div>
 			<motion.div
@@ -74,33 +74,29 @@ const Intro = () => {
 			>
 				<Link href={"#contact"}
 					onClick={() => navigateTo('Contact')}
-					className='bg-gray-900 text-white rounded-full py-3 px-7 flex-center gap-2 outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-95 transition group'
+					className='rounded-full py-3 px-7 flex-center gap-2 outline-none focus:scale-110 hover:scale-110 btn-pri active:scale-95 transition group'
 				>
 					Contact me here <BsArrowRight className='opacity-70 group-hover:translate-x-1 group-hover:scale-110 transition' />
 				</Link>
 				<Link
-					className=' group bg-white rounded-full py-3 px-7 flex-center gap-2 outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-95 transition border border-black/[.1]'
+					className=' group btn-2 rounded-full py-3 px-7 flex-center gap-2 outline-none focus:scale-110 hover:scale-110 active:scale-95 transition'
 					href="/CV.pdf" download >
 					Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 group-hover:scale-110 transition' />
 				</Link>
 				<Link
 					className='bg-white rounded-full p-4 text-gray-700 flex-center gap-2 text-[1.5rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:bg-gray-50 active:scale-95 transition border border-black/[.1] hover:text-gray-950'
-					href="https://www.linkedin.com/in/manuel-ashong-416a0a237/" target='_blank'>
+					href={info.social.linkedin}
+				>
 					<BsLinkedin />
 				</Link>
 				<Link
 					className='bg-white rounded-full p-4 text-gray-700 flex-center gap-2 text-[1.5rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:bg-gray-50 active:scale-95 transition border border-black/[.1] hover:text-gray-950'
-					href="https://www.github.com/manueldiamond/" target='_blank'>
+					href={info.social.linkedin} target='_blank'>
 					<BsGithub />
-				</Link>
-				<Link
-					className='bg-white rounded-full h-[58px] p-4 text-gray-700 flex-center gap-2 text-[1.5rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:bg-gray-50 active:scale-95 transition border border-black/[.1] hover:text-gray-950'
-					href="https://www.upwork.com/freelancers/~011e58865534aa91df" target='_blank'>
-					<Image className='flex flex-1 h-full aspect-square object-contain' src='/upwork_icon.webp' width={24} height={24} alt='upwork icon'></Image>
 				</Link>
 			</motion.div>
 
-		</section>
+		</section >
 	);
 };
 

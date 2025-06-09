@@ -7,3 +7,15 @@
 }
 @keyframes paperplane-fly {
 }
+
+.btn-pri{
+  @apply bg-red-500/30  text-white hover:bg-red-800/50;
+}
+
+.btn-white{
+  @apply bg-white text-gray-500 hover:bg-white/50 hover:text-black;
+}
+
+.btn-2{
+  @apply bg-white/10 hover:bg-white/50 text-white hover:text-black; 
+}

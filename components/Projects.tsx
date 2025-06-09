@@ -12,9 +12,9 @@ import { useSectionInView } from "@/lib/hooks";
 const Projects = () => {
         const ref = useSectionInView('Projects', 40)
         return (
-                <section ref={ref} id="projects" className=' scroll-mt-28  flex-center flex-col w-full max-w-[42rem]'>
+                <section ref={ref} id="projects" className=' scroll-mt-28  flex-center flex flex-col w-full container'>
                         <SectionHeading>My Projects</SectionHeading>
-                        <div className='flex flex-col gap-3 sm:gap-4 w-full'>
+                        <div className='grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 w-full'>
                                 {
                                         projectsData.map(project => (
                                                 <React.Fragment key={project.title}>

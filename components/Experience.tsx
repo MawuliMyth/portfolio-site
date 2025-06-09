@@ -17,7 +17,7 @@ const Experience = () => {
                         <VerticalTimelineElement
                             contentStyle={{
                                 visibility: 'visible',
-                                background: '#f3f4f6',
+                                background: '#222',
                                 boxShadow: 'none',
                                 textAlign: 'left',
                                 border: '1px solid rgba(0,0,0,.05)',
@@ -35,12 +35,12 @@ const Experience = () => {
                             icon={experience.icon}
                             iconStyle={{
                                 visibility: 'visible',
-                                background: 'white'
+                                background: '#222'
                             }}
 
                         >
                             <h3 className='text-lg font-bold '>{experience.title}</h3>
-                            <p className=' !text-gray-500 !text-[.9rem] !font-semibold italic !mt-1'>{experience.location}</p>
+                            <p className=' !text-gray-200 !text-[.9rem] !font-semibold italic !mt-1'>{experience.location}</p>
                             <p className=''>{experience.description}</p>
 
                         </VerticalTimelineElement>

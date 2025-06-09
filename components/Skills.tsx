@@ -21,7 +21,7 @@ const Skills = () => {
                 {
                     skillsData.map((skill, index) => (
                         <motion.li
-                            className='px-3 py-2 sm:px-5 sm:py-3 bg-white border-black/[.1] rounded-lg border ' key={skill}
+                            className='px-3 py-2 sm:px-5 sm:py-3 bg-red-700/20 border-black/[.1] font-medium rounded-lg border ' key={skill}
                             initial='initial'
                             whileInView='animate'
                             variants={faedInAnimVariants}
